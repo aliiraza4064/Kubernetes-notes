@@ -35,7 +35,7 @@ sysctl net.bridge.bridge-nf-call-iptables net.bridge.bridge-nf-call-ip6tables ne
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl
 # Create directory for keyrings
-mkdir /etc/apt/keyrings
+sudo mkdir /etc/apt/keyrings
 # Download the Google Cloud public signing key:
 sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
 # Add the Kubernetes apt repository:
