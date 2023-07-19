@@ -1,3 +1,7 @@
+# first of all do swapoff
+sudo swapoff -a
+
+
             # Forwarding IPv4 and letting iptables see bridged traffic
 
             
