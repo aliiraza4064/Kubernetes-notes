@@ -43,6 +43,8 @@ echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://a
 # Update apt package index, install kubelet, kubeadm and kubectl, and pin their version:
 sudo apt-get update
 sudo apt-get install -y kubelet docker.io
+#sudo apt install -y kubelet=1.26.0-00 docker.io
+#sudo apt-mark hold kubelet=1.26.0-00 docker.io
 sudo apt-mark hold kubelet  docker.io
 
 # Note: In releases older than Debian 12 and Ubuntu 22.04, /etc/apt/keyrings does not exist by default. You can create this directory if you need to, making it world-readable but writeable only by admins.
